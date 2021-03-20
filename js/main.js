@@ -1,3 +1,5 @@
+import Toggle from './checkbox.js';
+
 $('.select').each(function() {
     const _this = $(this),
         selectOption = _this.find('option'),
@@ -52,3 +54,6 @@ $('.select').each(function() {
         }
     });
 });
+
+const toggleCheckbox = new Toggle();
+//toggleCheckbox.eventHandler();

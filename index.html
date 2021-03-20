@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="stylesheet" href="../Макет 2/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <title>Макет 2</title>
 </head>
 <body class="body">
     <header class="header">
         <div class="wrapper">
             <div class="header__top-elements">
-                <img class="header__logo" src="../Макет 2/img/logo.png" alt="logo">
+                <img class="header__logo" src="img/logo.png" alt="logo">
                 <div class="header__links">
                     <a class="header__link" href="#">
                         <p class="header__link-text">Home</p>
@@ -22,7 +22,7 @@
                         <p class="header__link-text">Products</p>
                     </a>
                     <a class="header__link" href="#">
-                        <img class="header__link-img" src="../Макет 2/img/shop.png" alt="shop">
+                        <img class="header__link-img" src="img/shop.png" alt="shop">
                     </a>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                 </p>
             </div>
             <a class="header__button" href="#">
-                <img src="../Макет 2/img/header__button.png" alt="#">
+                <img src="img/header__button.png" alt="#">
             </a>
         </div>
     </header>
@@ -43,26 +43,29 @@
             <div class="form__elements">
                 <div class="form__gendre">
                     <div class="form__checkbox">
-                        <input class="form__custom-checkbox" type="checkbox" id="cb1"> <label class="form__label-label" for="cb1">men</label>
+                        <input class="form__custom-checkbox" type="checkbox" checked id="cb1" data-input> 
+                        <label class="form__label-label" for="cb1" checked data-checkbox='men'>men</label>
                     </div>
                     <div class="form__checkbox">
-                        <input class="form__custom-checkbox" type="checkbox" id="cb2"> <label class="form__label-label" for="cb2">women</label>
+                        <input class="form__custom-checkbox" type="checkbox" checked id="cb2" data-input> 
+                        <label class="form__label-label" for="cb2" checked data-checkbox='women'>women</label>
                     </div>
                     <div class="form__checkbox">
-                        <input class="form__custom-checkbox" type="checkbox" id="cb3"> <label class="form__label-label" for="cb3">children</label>
+                        <input class="form__custom-checkbox" type="checkbox" checked id="cb3" data-input> 
+                        <label class="form__label-label" for="cb3" checked data-checkbox='children'>children</label>
                     </div>
                 </div>
-                <a class="form__button" href="#">
+                <div class="form__button">
                     <p class="form__button-text">
-                        see all products
+                         <span class="all">see</span> all<span class="all"> products</span> 
                     </p>
-                </a>
+                </div>
             </div>
         </div>
     </section>
     <section class="products">
         <div class="container">
-            <div class="men">
+            <div class="men" data-product="men">
                 <div class="men__heading">
                     <h4>men</h4>
                     <hr class="men__line">
@@ -77,16 +80,16 @@
                                     <option value="JavaScript">Medium</option>
                                     <option value="PHP">Large</option>
                                 </select>
-                                <img class="men__size-image" src="../Макет 2/img/angle-down.png">
+                                <img class="men__size-image" src="img/angle-down.png">
                             </div>
-                            <img class="men__image" src="../Макет 2/img/t-short.png" alt="T-Shirt">
+                            <img class="men__image t-shirt" src="img/t-short.png" alt="T-Shirt">
                             <div class="men__product-info">
                                 <p class="men__name">T-Shirt</p>
                                 <p class="men__price">5,00€</p>
                             </div>
                         </div>
                     </div>
-                    <div class="men__products">
+                    <div class="men__products second">
                         <div class="men__product-block">
                             <div class="men__size">
                                 <select class="select" name="language">
@@ -95,21 +98,21 @@
                                     <option value="JavaScript">Medium</option>
                                     <option value="PHP">Large</option>
                                 </select>
-                                <img class="men__size-image" src="../Макет 2/img/angle-down.png">
+                                <img class="men__size-image" src="img/angle-down.png">
                             </div>
-                            <img class="men__image" src="../Макет 2/img/pants.png" alt="Pants">
+                            <img class="men__image pants" src="img/pants.png" alt="Pants">
                             <div class="men__product-info">
                                 <p class="men__name">pants forclaz</p>
-                                <p class="men__price">30,00€</p>
+                                <p class="men__price price">30,00€</p>
                             </div>
                         </div>
                     </div>
-                    <div class="men__products">
+                    <div class="men__products last">
                         <div class="men__product-block">
                             <div class="men__size">
                                 <p class="men__size-text">10litri</p>
                             </div>
-                            <img class="men__image back" src="../Макет 2/img/bag.png" alt="Bag">
+                            <img class="men__image backpack" src="img/bag.png" alt="Bag">
                             <div class="men__product-info">
                                 <p class="men__name">Backpack</p>
                                 <p class="men__price">60,00€</p>
@@ -118,9 +121,9 @@
                     </div>
                 </div>
             </div>
-            <div class="women">
+            <div class="men" data-product="women">
                 <div class="men__heading">
-                    <h4>women</h4>
+                    <h4 class="men__heading">women</h4>
                     <hr class="men__line">
                 </div>
                 <div class="men__cathalog">
@@ -133,16 +136,16 @@
                                     <option value="JavaScript">Medium</option>
                                     <option value="PHP">Large</option>
                                 </select>
-                                <img class="men__size-image" src="../Макет 2/img/angle-down.png">
+                                <img class="men__size-image" src="img/angle-down.png">
                             </div>
-                            <img class="men__image" src="../Макет 2/img/giacket.png" alt="Giacket">
+                            <img class="men__image jacket" src="img/giacket.png" alt="Giacket">
                             <div class="men__product-info">
                                 <p class="men__name">giacket</p>
                                 <p class="men__price">60,00€</p>
                             </div>
                         </div>
                     </div>
-                    <div class="men__products">
+                    <div class="men__products second">
                         <div class="men__product-block">
                             <div class="men__size">
                                 <select class="select" name="language">
@@ -151,16 +154,16 @@
                                     <option value="JavaScript">Medium</option>
                                     <option value="PHP">Large</option>
                                 </select>
-                                <img class="men__size-image" src="../Макет 2/img/angle-down.png">
+                                <img class="men__size-image" src="img/angle-down.png">
                             </div>
-                            <img class="men__image" src="../Макет 2/img/trekking shoes.png" alt="Trekking shoes">
+                            <img class="men__image shoes" src="img/trekking shoes.png" alt="Trekking shoes">
                             <div class="men__product-info">
                                 <p class="men__name">trekking shoes</p>
-                                <p class="men__price">80,00€</p>
+                                <p class="men__price price">80,00€</p>
                             </div>
                         </div>
                     </div>
-                    <div class="men__products">
+                    <div class="men__products last">
                         <div class="men__product-block">
                             <div class="men__size">
                                 <select class="select" name="language">
@@ -169,9 +172,9 @@
                                     <option value="JavaScript">Medium</option>
                                     <option value="PHP">Large</option>
                                 </select>
-                                <img class="men__size-image" src="../Макет 2/img/angle-down.png">
+                                <img class="men__size-image" src="img/angle-down.png">
                             </div>
-                            <img class="men__image back" src="../Макет 2/img/t-shirtw.png" alt="T-Shirt">
+                            <img class="men__image shirt" src="img/t-shirtw.png" alt="T-Shirt">
                             <div class="men__product-info">
                                 <p class="men__name">T-Shirt</p>
                                 <p class="men__price">20,00€</p>
@@ -180,7 +183,7 @@
                     </div>
                 </div>
             </div>
-            <div class="women">
+            <div class="men" data-product="children">
                 <div class="men__heading">
                     <h4>Children</h4>
                     <hr class="men__line">
@@ -195,16 +198,16 @@
                                     <option value="JavaScript">Medium</option>
                                     <option value="PHP">Large</option>
                                 </select>
-                                <img class="men__size-image" src="../Макет 2/img/angle-down.png">
+                                <img class="men__size-image" src="img/angle-down.png">
                             </div>
-                            <img class="men__image" src="../Макет 2/img/trousers.webp" alt="T-Shirt">
+                            <img class="men__image trousers" src="img/trousers.webp" alt="T-Shirt">
                             <div class="men__product-info">
                                 <p class="men__name">trousers</p>
                                 <p class="men__price">10,00€</p>
                             </div>
                         </div>
                     </div>
-                    <div class="men__products">
+                    <div class="men__products second">
                         <div class="men__product-block">
                             <div class="men__size">
                                 <select class="select" name="language">
@@ -213,27 +216,27 @@
                                     <option value="JavaScript">Medium</option>
                                     <option value="PHP">Large</option>
                                 </select>
-                                <img class="men__size-image" src="../Макет 2/img/angle-down.png">
+                                <img class="men__size-image" src="img/angle-down.png">
                             </div>
-                            <img class="men__image" src="../Макет 2/img/trousers.webp" alt="Pants">
+                            <img class="men__image trousers" src="img/trousers.webp" alt="Pants">
                             <div class="men__product-info">
                                 <p class="men__name">trousers</p>
                                 <p class="men__price">10,00€</p>
                             </div>
                         </div>
                     </div>
-                    <div class="men__products">
+                    <div class="men__products last">
                         <div class="men__product-block">
                             <div class="men__size">
                                 <select class="select" name="language">
-                                    <option disabled>size</option>
+                                    <option disabled> size</option>
                                     <option value="HTML">Small</option>
                                     <option value="JavaScript">Medium</option>
                                     <option value="PHP">Large</option>
                                 </select>
-                                <img class="men__size-image" src="../Макет 2/img/angle-down.png">
+                                <img class="men__size-image" src="img/angle-down.png">
                             </div>
-                            <img class="men__image back" src="../Макет 2/img/trousers.webp" alt="Bag">
+                            <img class="men__image trousers" src="img/trousers.webp" alt="Bag">
                             <div class="men__product-info">
                                 <p class="men__name">trousers</p>
                                 <p class="men__price">10,00€</p>
@@ -259,13 +262,15 @@
     <section class="pre-footer">
         <div class="wrapper">
             <div class="pre-footer__items">
-                <img class="pre-footer__img" src="../Макет 2/img/twitter.png" alt="twitter">
+                <a href="https://twitter.com/?lang=ru" target="blank">
+                    <img class="pre-footer__img" src="img/twitter.png" alt="twitter">
+                </a>
                 <p class="pre-footer__text">“ E-commerce psd theme available ”</p>
             </div>
         </div>
     </section>
     <footer class="footer">
-        <div class="wrapp">
+        <div class="wrap">
             <div class="footer__items">
                 <div class="footer__info">
                     <h3 class="footer__info-heading">Trekking</h3>
@@ -278,8 +283,8 @@
                 </div>
                 <div class="footer__links">
                     <div class="footer__links-links">
-                        <table>
-                            <tr>
+                        <table class="footer__table">
+                            <tr class="footer__tr">
                                 <td><a class="footer__links-link" href="#">Credits</a></td>   
                                 <td><a class="footer__links-link border" href="#">Privacy</a></td>   
                                 <td><a class="footer__links-link border" href="#">About</a></td>   
@@ -295,6 +300,6 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../Макет 2/js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
